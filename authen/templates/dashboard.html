@@ -1,0 +1,25 @@
+{% extends 'register.html' %}
+<!DOCTYPE html> 
+{% load static %}
+{% block content %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <h1>Welcome, {{user.username}} !! </h1>
+    <div class="row">
+		{% for movie in movies %}
+		<div class="col-lg-2">
+			<img class="thumbnail" src="{{movie.movie_image.url}}">
+			<div class="box-element product">
+                <h2><strong>{{movie.movie_name}}</strong></h2>
+				<hr>
+				<button>Book Now</button>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</body>
+</html>
+{% endblock content %}

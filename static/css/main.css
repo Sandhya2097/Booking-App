@@ -1,0 +1,29 @@
+.box-element{
+    background-color: #fff;
+    box-shadow: hsL(0,0%,80%) 0 0 16px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.product{
+    border-radius: 0 0 4px 4px;
+}
+
+.thumbnail{
+	width: 80%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.col-lg-2, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
